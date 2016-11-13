@@ -1,7 +1,7 @@
 PRODUCTS_BYTES = 65536
 
 def generate_products
-  bytes = (-128..127).to_a
+  bytes = (0..255).to_a
   puts "bytes: #{bytes.size}"
 
   products = bytes.product(bytes).to_a
